@@ -1,36 +1,41 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "This is first blog with nodejs",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TuNinh99/Nodejs_blog.git"
-  },
-  "keywords": [
-    "blog",
-    "nodejs",
-    "blog",
-    "nodejs"
-  ],
-  "author": "nguyentuninh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TuNinh99/Nodejs_blog/issues"
-  },
-  "homepage": "https://github.com/TuNinh99/Nodejs_blog#readme",
-  "dependencies": {
-    "express": "^4.18.2",
-    "express-handlebars": "^6.0.6"
-  },
-  "devDependencies": {
-    "morgan": "^1.10.0",
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
-  }
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "This is first blog with nodejs",
+    "main": "src/index.js",
+    "scripts": {
+        "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write './src/**/*.{js, json, scss}'",
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TuNinh99/Nodejs_blog.git"
+    },
+    "keywords": [
+        "blog",
+        "nodejs",
+        "blog",
+        "nodejs"
+    ],
+    "author": "nguyentuninh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TuNinh99/Nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/TuNinh99/Nodejs_blog#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "express-handlebars": "^6.0.6",
+        "mongoose": "^6.8.3"
+    },
+    "devDependencies": {
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.0",
+        "morgan": "^1.10.0",
+        "node-sass": "^8.0.0",
+        "nodemon": "^2.0.20",
+        "prettier": "^2.8.1"
+    }
 }
